@@ -11,7 +11,7 @@ client.aliases = new Collection();
 
 client.categories = fs.readdirSync("./commands/");
 
-config({jsdjsjsjsjsj
+config({
     path: __dirname + "/.env"
 });
 
@@ -30,9 +30,9 @@ client.on("ready", () => {
         }
     });
 });
-
+//coment
 client.on("message", async message => {
-    const prefix = "_";
+    const prefix = "!";
 
     if (message.author.bot) return;
     if (!message.guild) return;
